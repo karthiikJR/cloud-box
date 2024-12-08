@@ -1,3 +1,4 @@
+import Section from "@/components/context-section";
 import Navbar from "@/components/nav-bar";
 import React from "react";
 
@@ -9,7 +10,9 @@ export default function Layout({
 	return (
 		<>
 			<Navbar />
-			<section className="container mx-auto">{children}</section>
+			<Section>
+				<div className="container mx-auto">{children}</div>
+			</Section>
 		</>
 	);
 }

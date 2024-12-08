@@ -16,7 +16,7 @@ import Link from "next/link";
 
 function Navbar() {
 	return (
-		<header className="border-b-2">
+		<header className="border-b-2 fixed top-0 w-full backdrop-blur-md z-[55]">
 			<nav className="p-4 flex items-center justify-between">
 				<Link href="/my-drive">
 					<div className="flex sm:flex-row flex-col justify-center items-center gap-2">
@@ -44,7 +44,7 @@ function Navbar() {
 								<UserIcon />
 							</Button>
 						</DropdownMenuTrigger>
-						<DropdownMenuContent align="end">
+						<DropdownMenuContent className="z-[60]" align="end">
 							<DropdownMenuLabel>My Account</DropdownMenuLabel>
 							<DropdownMenuSeparator />
 							<DropdownMenuItem>
