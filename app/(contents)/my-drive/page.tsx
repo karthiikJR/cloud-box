@@ -11,7 +11,7 @@ function page() {
 	) => {
 		switch (e.detail) {
 			case 2: {
-				router.push("folders/" + folderId);
+				router.push("folder/" + folderId);
 				break;
 			}
 			default: {
