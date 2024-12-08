@@ -17,7 +17,7 @@ function Navbar() {
 	return (
 		<header className="border-b-2">
 			<nav className="p-4 flex items-center justify-between">
-				<div className="flex items-center gap-2">
+				<div className="flex sm:flex-row flex-col justify-center items-center gap-2">
 					<Image
 						src="/logo-no-bg.png"
 						alt=""
@@ -33,7 +33,7 @@ function Navbar() {
 					className="rounded-full sm:w-96 overflow-hidden"
 					placeholder="Search..."
 				/>
-				<div className="space-x-2">
+				<div className="flex sm:gap-2 flex-col sm:flex-row">
 					<ModeToggle />
 					<DropdownMenu>
 						<DropdownMenuTrigger asChild>
